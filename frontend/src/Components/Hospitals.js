@@ -6,7 +6,7 @@ import Hospital from './Hospital';
 import "./Hospitals.css"
 import { Link, useNavigate } from 'react-router-dom';
 
-const url="http://localhost:8000/hospitals";
+const url="/hospitals";
 const fetchHandler= async()=>{
 
     return await axios.get(url).then((res)=>res.data)

@@ -27,7 +27,7 @@ confirmpassword:"",
   }
   const sendRequest=async()=>{
     if(inputs.password === inputs.confirmpassword){
-    await axios.post("http://localhost:8000/users",{
+    await axios.post("/users",{
       name:String(inputs.name),
       email:String(inputs.email),
       phonenumber:String(inputs.phonenumber),

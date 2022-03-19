@@ -10,7 +10,7 @@
      const {_id,name, state , district,emergencymedicinekit,oxygencylider, description, numberofambulance,numberoficu,ot,bloodbank,covidbeds,denguebeds,malariabeds,plasmabank,numberofbeds,adress,contactnumber,available}=props.hospital;
  const deleteHandler=async()=>{
    await axios
-   .delete(`http://localhost:8000/hospitals/${_id}`)
+   .delete(`/hospitals/${_id}`)
    .then(res=>res.data)
    .then(()=>history("/"))
    .then(()=>history("/hospitals"));

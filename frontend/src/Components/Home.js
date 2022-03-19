@@ -13,7 +13,7 @@ import "./Home.css"
  import Hospitals from './Hospitals';
 import Homehospital from './Homehospital';
 
- const url="http://localhost:8000/hospitals";
+ const url="/hospitals";
 
  const fetchHandler= async()=>{
 

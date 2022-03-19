@@ -41,7 +41,7 @@ import hospitalhome from "./ambulance.jpg"
      }))
    }
    const sendRequest=async()=>{
-     await axios.post("http://localhost:8000/hospitals",{
+     await axios.post("/hospitals",{
        name:String(inputs.name),
        state:String(inputs.state),
        district:String(inputs.district),

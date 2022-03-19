@@ -5,7 +5,7 @@ import { useState,useEffect } from 'react'
  import { useNavigate } from 'react-router-dom'
 
 import "../App.css"
- const url2="http://localhost:8000/users";
+ const url2="/users";
  const fetchHandler2= async()=>{
 
   return await axios.get(url2).then((res)=>res.data)
@@ -38,7 +38,7 @@ password:"",
       }
       const sendRequest=async()=>{
        
-        await axios.post("http://localhost:8000/users",{
+        await axios.post("/users",{
          
           email:String(inputs.email),
         
