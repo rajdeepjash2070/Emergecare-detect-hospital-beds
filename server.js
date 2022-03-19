@@ -31,9 +31,9 @@ mongoose.connect(DB,{
 const PORT=process.env.PORT || 8000;
 
 
-app.get('/',(req,res)=>{
-    res.send(`Hello this my home page`);
-})
+// app.get('/',(req,res)=>{
+//     res.send(`Hello this my home page`);
+// })
 if(process.env.NODE_ENV=="production"){
     app.use(express.static("frontend/my-app/build"));
     const path=require("path");
