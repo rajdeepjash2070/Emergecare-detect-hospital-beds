@@ -1,0 +1,51 @@
+ .card1{
+  box-shadow: 0 35px 20px rgb(110, 109, 109);
+background-color: rgb(10, 209, 116);
+  border-radius: 10px 10px 10px 10px;
+  direction: flex-start;
+text-align: center;
+width: 360px;
+display: flex;
+float: left;
+color: white;
+border: 3px solid white;
+
+
+} 
+.title1{
+  font-weight: 700;
+  
+}
+
+.card1-body{
+  margin-left: 40px;
+}
+  @media only screen and (max-width: 1080px){
+.card1{
+  width: 90%;
+  display: block;
+}
+.card1-body{
+  margin-left: -10px;
+}
+}
+
+
+.wrapper:after{
+ 
+    content: "";
+    display: table;
+    clear: both;
+ 
+} 
+ 
+
+
+body {
+  background: #DFC2F2;
+      background-image: linear-gradient( to right, #ffffac,#ffe6e6);
+      
+    
+      }
+  
+  

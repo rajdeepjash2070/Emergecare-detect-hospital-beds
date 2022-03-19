@@ -1,0 +1,60 @@
+.bookcards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.hospitalhome img{
+    width: 100%;
+    height: 70%;
+    margin-top: -3px;
+}
+.hospitalhome h2{
+font-family: cursive;
+background:rgba(122, 131, 214, 0.18);
+box-shadow: 0 8px 32px 0 #1f26875e;
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+margin-top: -350px;
+width: 60%;
+}
+#htag{
+  margin-top: -10px;
+}
+.form-container{
+  width: 60%;
+
+  margin: 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+ background: rgb(0, 211, 63);
+ color: white;
+ margin-left: 300px;
+ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.form-container input{
+border-radius: 20px 20px 20px 20px;
+
+}
+.form-container label{
+  font-size: 20px;
+}
+.health img{
+    height: 30%;
+    width: 50%;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: -1200px;
+    margin-left: 660px;
+    background:rgba(122, 131, 214, 0.18);
+box-shadow: 0 8px 32px 0 #1f26875e;
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+@media only screen and (max-width: 1080px){
+  .form-container{
+  width: 90%;
+  margin-left: 15px;
+  }
+}
+

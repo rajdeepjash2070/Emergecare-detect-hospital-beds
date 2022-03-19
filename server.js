@@ -35,10 +35,10 @@ const PORT=process.env.PORT || 8000;
 //     res.send(`Hello this my home page`);
 // })
 if(process.env.NODE_ENV=="production"){
-    app.use(express.static("frontend/my-app/build"));
+    app.use(express.static("frontend/build"));
     const path=require("path");
     app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'frontend','my-app','build','index.html'));
+        res.sendFile(path.resolve(__dirname,'frontend','build','index.html'));
     })
 }
 app.listen(PORT,()=>{
