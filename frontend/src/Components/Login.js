@@ -51,14 +51,6 @@ password:"",
     }
 
     const checkuser=()=>{
-     
-    // for(var i=0;i<user.length;i++){
-    //  if(user[i].email==inputs.email && user[i].password==inputs.password){
-
-    //   history("/")
-    //  }
-    
-    // }
    
     user.filter((userlogin)=>{
       if(userlogin.email.toLowerCase().includes((inputs.email).toLocaleLowerCase()) && userlogin.password.toLowerCase().includes((inputs.password).toLocaleLowerCase())){

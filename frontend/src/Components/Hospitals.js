@@ -91,7 +91,7 @@ console.log(hospitals);
     <Link to={`/hospitals/${hospital._id}`}><button type="button" class="btn btn-info">Update</button></Link>
     <button type="button" onClick={async()=>{
       await axios
-      .delete(`http://localhost:8000/hospitals/${hospital._id}`)
+      .delete(`/hospitals/${hospital._id}`)
       .then(res=>res.data)
       .then(()=>history("/"))
       .then(()=>history("/xxxx9883"));

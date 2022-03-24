@@ -2,7 +2,7 @@
  import React, { useEffect, useState } from 'react'
  import { useNavigate, useParams } from 'react-router-dom'
 import Hospital from './Hospital';
-
+import "./Hospitals.css"
  const HospitalDetails = () => {
    const [checked,setChecked]=useState(false);
    const [inputs,setInputs]=useState({});
@@ -19,11 +19,8 @@ const history=useNavigate();
      }, [id])
      const sendRequest=async()=>{
      await axios.put(`/hospitals/${id}`,{
-    //    name:String(inputs.name),
-    //    author:String(inputs.author),
-    //    description:String(inputs.description),
-    //    price:Number(inputs.price),
-    //    available:Boolean(checked)
+   
+  
     name:String(inputs.name),
     state:String(inputs.state),
     district:String(inputs.district),
@@ -56,8 +53,10 @@ const history=useNavigate();
      }
     
    return (
-     <div>HospitalDetails of a specific book
-     { inputs && (<form className='p-4' onSubmit={handleSubmit}>
+     <div>  <h1  className='text-center bg-warning text-white'>Update The Hospital with Accurate Details</h1>
+     <h3 id='htag' className='text-center bg-danger text-white'>Your Details can Save a Pateint's Life and also Wrong Details can Finish a pateint's Life </h3>
+
+     { inputs && (<form className='p-4 form-container' onSubmit={handleSubmit}>
      <div class="mb-3">
      <label for="exampleInputEmail1" class="form-label">Hospital's Name</label>
      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={inputs.name} onChange={handleChange} name='name'/>
@@ -134,7 +133,7 @@ const history=useNavigate();
      <input type="checkbox" checked={checked} onChange={()=>setChecked(!checked)} value={inputs.available} class="form-check-input" id="exampleCheck1"/>
      <label class="form-check-label" for="exampleCheck1">Beds Avialable or Not</label>
    </div>
-   <button type="submit" class="btn btn-primary">Update Book</button>
+   <button type="submit" class="btn btn-primary">Update Your Hospital</button>
  </form>)}
 
      </div>
